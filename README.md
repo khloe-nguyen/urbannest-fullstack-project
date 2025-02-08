@@ -6,7 +6,8 @@ Technologies used: Java Spring Boot - HTML/CSS/JS - ReactJS - React Query - Styl
 IDE used: IntelliJ, Visual Studio Code 
 
 Backend: Java Spring Boot
-Fronend:
+
+Frontend:
 1. React (Website)
 2. Flutter (Mobile)
 
