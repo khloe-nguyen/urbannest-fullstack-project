@@ -1,0 +1,95 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font-family: "Nunito";
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f7f6f6;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.no-scroll {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.character--selected {
+  position: relative;
+}
+
+.character {
+  border-radius: 8px;
+
+  &:active {
+    border: 1px solid #dc0f62;
+  }
+}
+
+/* optionally hide placeholder (in case it overlaps the cursor) */
+.character--selected:not(.character--filled) {
+  color: transparent;
+}
+
+.character--selected:not(.character--filled)::after {
+  content: "";
+  width: 1px;
+  height: 25px;
+  background-color: white;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row !important;
+}

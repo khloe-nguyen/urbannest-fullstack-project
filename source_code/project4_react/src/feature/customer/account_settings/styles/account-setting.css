@@ -1,0 +1,16 @@
+.account-settings-container {
+  width: 1080px;
+  min-height: 300px;
+  margin: 2rem auto;
+}
+
+.account-settings-container .title .description {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
