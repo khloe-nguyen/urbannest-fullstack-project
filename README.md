@@ -3,6 +3,7 @@ UrbanNest Project - Semester 4 - FPT Aptech
 Short-term rental booking service with mobile and website version
 
 Technologies used: Java Spring Boot - HTML/CSS/JS - ReactJS - React Query - Styled-Components - Flutter
+
 IDE used: IntelliJ, Visual Studio Code 
 
 Backend: Java Spring Boot
